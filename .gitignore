@@ -1,0 +1,16 @@
+# Large source data (re-downloaded with the documented commands, never committed)
+brreg-enheter.csv
+signalpost-universe.jsonl.gz
+*.tar.gz
+
+# macOS AppleDouble resource forks from the archive extraction
+._*
+
+# Environment and caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+out/*-cache/
+
+.ipynb_checkpoints/

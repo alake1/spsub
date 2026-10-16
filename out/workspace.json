@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "pins": [
+    "917364907",
+    "930355496"
+  ],
+  "history": [
+    {
+      "created_at": "2026-10-16T04:00:43.993711Z",
+      "query": "top 10 by revenue",
+      "plan": {
+        "version": "closed_company_screen_v1",
+        "query": "top 10 by revenue",
+        "filters": [],
+        "sort": {
+          "field": "revenue",
+          "direction": "desc",
+          "limit": 10
+        },
+        "unsupported": [],
+        "executable": true
+      },
+      "result_count": 10,
+      "result_organisation_numbers": [
+        "917364907",
+        "930355496",
+        "916340257",
+        "960711033",
+        "926790137",
+        "935354293",
+        "922155399",
+        "922199477",
+        "891742622",
+        "999111173"
+      ]
+    },
+    {
+      "created_at": "2026-10-16T04:00:43.994308Z",
+      "query": "companies in OSLO with annual accounts top 5 by revenue",
+      "plan": {
+        "version": "closed_company_screen_v1",
+        "query": "companies in OSLO with annual accounts top 5 by revenue",
+        "filters": [
+          {
+            "field": "municipality",
+            "operator": "eq",
+            "value": "OSLO",
+            "evidence_module": "registry"
+          },
+          {
+            "field": "financials",
+            "operator": "available",
+            "value": true,
+            "evidence_module": "financials"
+          }
+        ],
+        "sort": {
+          "field": "revenue",
+          "direction": "desc",
+          "limit": 5
+        },
+        "unsupported": [],
+        "executable": true
+      },
+      "result_count": 5,
+      "result_organisation_numbers": [
+        "930355496",
+        "922199477",
+        "891742622",
+        "924585463",
+        "887325022"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "corpus": "frozen local research-agent suite",
+  "profiles": 100,
+  "questions": 4,
+  "single_company_supported": true,
+  "screen_results": [
+    {
+      "query": "top 10 by revenue",
+      "expected": [
+        "917364907",
+        "930355496",
+        "916340257",
+        "960711033",
+        "926790137",
+        "935354293",
+        "922155399",
+        "922199477",
+        "891742622",
+        "999111173"
+      ],
+      "actual": [
+        "917364907",
+        "930355496",
+        "916340257",
+        "960711033",
+        "926790137",
+        "935354293",
+        "922155399",
+        "922199477",
+        "891742622",
+        "999111173"
+      ],
+      "exact_membership_and_order": true,
+      "exact_plan": true,
+      "citations_complete": true
+    },
+    {
+      "query": "companies in OSLO with annual accounts top 5 by revenue",
+      "expected": [
+        "930355496",
+        "922199477",
+        "891742622",
+        "924585463",
+        "887325022"
+      ],
+      "actual": [
+        "930355496",
+        "922199477",
+        "891742622",
+        "924585463",
+        "887325022"
+      ],
+      "exact_membership_and_order": true,
+      "exact_plan": true,
+      "citations_complete": true
+    }
+  ],
+  "unsupported_abstention": true,
+  "saved_work": true,
+  "provenance_export": true,
+  "external_footprint_qa_passed": true,
+  "external_footprint_facts": 1,
+  "points": {
+    "cited_single_company_qa": 4,
+    "cross_company_screening": 3.0,
+    "exact_inspectable_filters": 2.0,
+    "unsupported_abstention": 1,
+    "saved_history": 1,
+    "provenance_export": 1
+  },
+  "score": 12.0,
+  "maximum": 12,
+  "qualification_passed": true
+}

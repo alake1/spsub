@@ -1,0 +1,17 @@
+{
+  "connector_suite": "signalpost_free_external_connectors_v1",
+  "profiles": 100,
+  "organisations_requested": 100,
+  "observations": 112,
+  "rejected_by_gate": 0,
+  "companies_with_observations": 100,
+  "connector_counts": {
+    "official_registry_coverage": 100,
+    "official_registry_workforce": 10,
+    "company_site_activity": 2,
+    "wikidata_identity": 0,
+    "openstreetmap_places": 0
+  },
+  "third_party_cost_usd": 0,
+  "claim_boundary": "Free/rights-clean sources only. Official registry coverage is exact foundation data; external footprint depth on a registry-only population is intentionally not overstated."
+}

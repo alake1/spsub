@@ -1,0 +1,65 @@
+{
+  "submission": "signalpost-norway-company-agent",
+  "run_id": "submission-001",
+  "command": "python scripts/run_submission.py --organisations entry-companies.jsonl --bulk brreg-enheter.csv --expected-count 100 --run-id submission-001",
+  "batch": {
+    "expected": 100,
+    "emitted_envelopes": 100,
+    "zero_silent_drops": true,
+    "wall_clock_seconds": 103.115,
+    "requests": 532,
+    "bytes": 2291794,
+    "p50_ms": 486,
+    "p95_ms": 528
+  },
+  "external_footprint": {
+    "observations": 113,
+    "companies_with_observations": 100,
+    "connector_counts": {
+      "official_registry_coverage": 100,
+      "official_registry_workforce": 10,
+      "company_site_activity": 2,
+      "wikidata_identity": 1,
+      "openstreetmap_places": 0,
+      "openstreetmap_error": "HTTPError:502"
+    },
+    "published_audited": 113,
+    "wrong_entity_publications": 0,
+    "unsupported_publications": 0,
+    "coverage": {
+      "any_external": 1.0,
+      "two_platforms": 0.03,
+      "workforce_jobs": 0.1,
+      "ratings_reviews": 0.0,
+      "buzz_engagement": 0.02,
+      "sentiment": 0.0
+    },
+    "connector_policy_passed": true
+  },
+  "third_party_cost_usd": 0,
+  "declarations": {
+    "models": [
+      "No model is used for scored facts. Deterministic extraction only; the optional sentiment model is not run."
+    ],
+    "apis": [
+      "Brønnøysundregistrene Enhetsregisteret + Regnskapsregisteret (NLOD 2.0)",
+      "Wikidata SPARQL (CC0)",
+      "OpenStreetMap Overpass (ODbL 1.0)",
+      "Company-controlled public websites (bounded, robots-respecting crawl)"
+    ],
+    "licences": {
+      "brreg": "NLOD 2.0",
+      "wikidata": "CC0 1.0",
+      "openstreetmap": "ODbL 1.0",
+      "company_site": "Company-controlled public pages",
+      "google_news_rss": "Discovery only; quarantined, never published"
+    },
+    "source_rights_manifest": "config/source-rights.json"
+  },
+  "score": {
+    "raw_score": 59.14,
+    "awardable_score": 59.14,
+    "qualification_passed": true,
+    "failed_gates": []
+  }
+}

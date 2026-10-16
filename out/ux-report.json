@@ -1,0 +1,27 @@
+{
+  "scorer": "signalpost_product_ux_v1",
+  "prototype": "out/prototype.html",
+  "checks": {
+    "search_and_filters": true,
+    "company_profile_detail": true,
+    "research_agent_qa": true,
+    "workspace_persistence": true,
+    "evidence_disclosure": true,
+    "provenance_export": true,
+    "external_intelligence_surface": true
+  },
+  "awarded": {
+    "search_and_filters": 1.5,
+    "company_profile_detail": 1.0,
+    "research_agent_qa": 1.5,
+    "workspace_persistence": 1.0,
+    "evidence_disclosure": 1.0,
+    "provenance_export": 1.0,
+    "external_intelligence_surface": 1.0
+  },
+  "score": 8.0,
+  "maximum": 8.0,
+  "external_intelligence_presented": true,
+  "external_observations": 113,
+  "claim_boundary": "Checklist over the shipped artifact; it scores the demonstration surface, not user-study outcomes."
+}

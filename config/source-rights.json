@@ -1,0 +1,56 @@
+{
+  "manifest": "signalpost-source-rights",
+  "version": "2026-10-16",
+  "policy_url": "https://builderr.ai/signalpost-source-policy",
+  "note": "Machine-readable declaration of every connector used for published Signalpost observations. A connector may only contribute publishable observations when its acquisition mode is rights-clean and its licence/terms are recorded here. Experimental connectors are declared but quarantined and never publish.",
+  "connectors": {
+    "exact_company_site_activity_v1": {
+      "platform": "company_site",
+      "acquisition_mode": "permitted_public_page",
+      "rights_status": "approved",
+      "licence": "Company-controlled public web page",
+      "basis": "Robots-respecting, bounded, identity-gated crawl of the company's own site. Content is retained as evidence with URL, retrieval time and content hash.",
+      "rate_limit": "<=1 request/second/domain; one retry; 10s attempt timeout"
+    },
+    "exact_company_site_news_activity_v1": {
+      "platform": "company_site",
+      "acquisition_mode": "permitted_public_page",
+      "rights_status": "approved",
+      "licence": "Company-controlled public web page",
+      "basis": "Same bounded identity-gated crawl; only the company's own news/press/activity paths are read.",
+      "rate_limit": "<=1 request/second/domain; one retry; 10s attempt timeout"
+    },
+    "official_annual_report_workforce_v1": {
+      "platform": "brreg",
+      "acquisition_mode": "official_api",
+      "rights_status": "approved",
+      "licence": "Norwegian Licence for Open Government Data (NLOD) 2.0",
+      "basis": "Official annual-account copy PDF from Regnskapsregisteret, matched by organisation number present in the document.",
+      "rate_limit": "~30 requests/minute on the copy endpoint"
+    },
+    "wikidata_identity_v1": {
+      "platform": "wikidata",
+      "acquisition_mode": "licensed_api",
+      "rights_status": "approved",
+      "licence": "CC0 1.0 (Wikidata structured data)",
+      "basis": "Entity matched by the Norwegian organisation-number property P233. No name-similarity-only matches are published.",
+      "rate_limit": "<=1 query/second; batch SPARQL"
+    },
+    "openstreetmap_places_v1": {
+      "platform": "openstreetmap",
+      "acquisition_mode": "licensed_api",
+      "rights_status": "approved",
+      "licence": "Open Database Licence (ODbL) 1.0",
+      "basis": "OpenStreetMap feature matched to the exact legal entity by the Norwegian organisation-number tag (ref:no:orgnr / organisasjonsnummer). Name-only matches abstain.",
+      "rate_limit": "<=1 request/second to Overpass"
+    },
+    "google_news_rss_exact_title_experiment_v1": {
+      "platform": "news",
+      "acquisition_mode": "rights_review_experiment",
+      "rights_status": "review_required",
+      "licence": "Google News RSS",
+      "basis": "Discovery only. Exact legal name must appear in the headline. Publisher bodies and result storage rights are not independently verified, so these observations are quarantined and never published.",
+      "rate_limit": "<=4 concurrent requests"
+    }
+  }
+}
